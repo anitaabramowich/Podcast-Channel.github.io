@@ -1,0 +1,132 @@
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 50px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+li {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  width: 50px;
+    padding: 10px;
+    color: #fff;
+    font-size: 30px;
+    transition: all 500ms ease;
+    display: block;
+}
+
+.menu {
+  position: absolute;
+  background: $primary-color;
+  width: 100%;
+  margin-top: -100%;
+  transition: all 500ms ease;
+  
+}
+
+.menu ul {
+  flex-direction: column;
+  border-top: 1px solid #fffa;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+#btn-menu:checked ~ .menu {
+  margin:0;
+  margin-top: 50px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff; 
+  padding: 15px 20px;
+  transition: all 500ms ease;
+  font-family: $font-stack;
+}
+
+.menu li a:hover{
+  background-color: rgba(255,255,255,0.3);
+}
+
+.icon-menu {
+  margin-right: 5px;
+}
+
+li a:hover {
+  color: $secondary-color;
+  text-decoration: line-through;
+}
+
+li a:active {
+  color: rgb(138, 132, 132);
+  text-decoration: line-through;
+}
+
+@media (min-width: 800px) {
+  
+  .icon-menu {
+    display: none;
+  }
+  
+  .menu {
+    background: #fff;
+    width: fit-content;
+    margin-top: 0;
+    margin-right: 0;
+    transition: none;
+    position: relative;
+    display: block;
+    float: right;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu li a{
+    color: $terciary-color;
+    display: block;
+  }
+
+  .menu li a:hover {
+    color: $secondary-color;
+  }
+  
+  .menu li a:active {
+    color: rgb(138, 132, 132);
+    text-decoration: line-through;
+  }
+
+  header label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+  
+  li {
+    margin: 0;
+  }
+}

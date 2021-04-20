@@ -1,0 +1,97 @@
+.caja-titulo1 {
+    font-size: 25px;
+    margin: 50px 15px 0px 15px;
+    font-family: $font-stack;
+    font-weight: normal;
+    padding-top: 20px;
+    display: flex;
+}
+
+h1 {
+    font-weight: 400;
+    color: $terciary-color;
+}
+
+.caja-titulo2 {
+    font-size: 25px;
+    margin: 0px 15px 0px 15px;
+    font-family: $font-stack; 
+}
+
+.world {
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.caja-subtitulo {
+    margin: 20px 15px 0px 15px;
+    font-size: 15px;
+    font-family: $font-stack2;
+}
+
+.button1 {
+    background-color: $secondary-color;
+    width: 288px;
+    height: 50px;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: $font-stack2;
+    border: 0px;
+    outline: none;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.button1:hover {
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    cursor: pointer;
+}
+
+.button1 a:any-link {
+    text-decoration: none;
+    color: $terciary-color;
+}
+
+.text-button {
+    font-weight: 500;
+}
+
+@media (min-width: 800px) {
+    .contenedor-titulo-desktop {
+        display: flex;
+        position: relative;
+    }
+   
+    .caja-titulo1 {  
+        margin: 50px 0px 0px 70px;
+    }
+
+    .caja-titulo2 {
+        margin: 70px 15px 0px 6px;
+    }
+
+    .lista-punto-azul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .punto-azul::after {
+        content: "\2022";
+        padding-left: 5px;
+        color: $primary-color;
+        vertical-align: -5px;
+        font-size: 25px;
+    }
+
+    .caja-subtitulo {
+        margin: 10px 15px 0px 70px;
+        font-size: 13px;
+    }
+
+    .button1 {
+        width: 200px;
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,15 @@
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./introduccion";
+@import "./podcast";
+@import "./informacion";
+@import "./footer";
+
+* {
+    @include format-document;
+}
+
+
+
+

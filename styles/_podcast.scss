@@ -1,0 +1,62 @@
+.container-podcasts {
+     background: linear-gradient(to bottom, $primary-color, rgb(9, 9, 133));
+     clip-path: polygon(0 2%, 100% 0, 100% 90%, 0 100%);
+     width: 100%;
+     margin-top: 30px;
+     position: absolute;
+     z-index: 1;
+}
+
+.caja-episodios {
+    margin: 30px 15px 15px 15px;
+    font-family: $font-stack;
+    font-size: 20px;
+    color: white;
+    padding-top: 30px;
+}
+
+.podcast1, .podcast2, .podcast3, .podcast4 {
+    width: 290px;
+    height: 232px;
+    display: block;
+    margin: auto; 
+    margin-top: 10px;
+}
+
+.podcast4 {
+    margin-bottom: 200px;
+}
+
+@media (min-width: 800px) {
+    .container-podcasts {
+        background: linear-gradient(to bottom, $primary-color, rgb(9, 9, 133));
+        clip-path: polygon(0 5%, 100% 0, 100% 90%, 0 100%);
+   }
+
+   .caja-episodios {
+    margin: 50px 15px 15px 70px;
+   }
+
+   .podcast1, .podcast2, .podcast3, .podcast4 {
+    width: 570px;
+    display: flex ;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    } 
+
+    .podcast2, .podcast4 {
+        margin-right: 70px;
+    }
+    
+    .caja-podcasts1, .caja-podcasts2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .caja-podcasts2 {
+        margin-bottom: 200px;
+    }
+
+
+}
