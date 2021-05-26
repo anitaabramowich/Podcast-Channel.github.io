@@ -21,12 +21,15 @@
     display: block;
     margin: auto; 
     margin-top: 10px;
-    background-color: transparent;
-    border: 0px;
 }
 
 .podcast4 {
     margin-bottom: 200px;
+}
+
+iframe {
+    border: none;
+    background-color: transparent;
 }
 
 @media (min-width: 800px) {
